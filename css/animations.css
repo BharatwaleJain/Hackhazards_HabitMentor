@@ -1,0 +1,81 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.animate-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 0%, #f8f8f8 50%, #f0f0f0 100%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+}
+
+/* Animations for habit completion */
+.habit-completed {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Animations for achievements */
+.achievement-unlocked {
+    animation: bounce 1s ease-in-out;
+}
+
+/* Animations for progress bars */
+.progress-bar-animated {
+    animation: shimmer 3s infinite linear;
+}
+
+/* Transition for view changes */
+.view-container {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation for new habits */
+.habit-card.new {
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-bounce {
+    animation: bounce 1s ease-in-out infinite;
+}
